@@ -1,16 +1,12 @@
-### Hi there 👋
+### Hi, I'm Pablo
 
+## About me
+- 📚 Systems Biology student at Maastricht University.
+- 🔍 Doing my internship in Modeling Metabolism.
+- 🌱 Learning about MATLAB, R and Python.
+
+## Contact
+- 📫 [pablotejero1998@gmail.com](mailto:pablotejero1998@gmail.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/pablo-tejero/)
+- 🐦 [Twitter](tu-enlace-de-twitter)
 <!--
-**pablots98/pablots98** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
