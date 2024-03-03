@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,6 +24,10 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+nav ul li:hover {
+    transform: scale(1.2); /* Aumenta el tamaño del ítem en un 20% */
 }
 
 section {
