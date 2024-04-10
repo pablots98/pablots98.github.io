@@ -1,45 +1,51 @@
+/* Mejoras generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-nav ul {
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
+/* Transiciones suaves para enlaces */
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
-nav ul li:hover {
-    transform: scale(1.2); /* Aumenta el tamaño del ítem en un 20% */
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #4db8ff; /* Cambia el color al pasar el mouse */
 }
 
-section {
-    padding: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+/* Estilo para formularios */
+input[type="text"],
+input[type="email"],
+textarea {
     width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+/* Diseño responsivo con Flexbox para la sección de proyectos */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-item {
+    flex-basis: 45%; /* Ajusta esta línea según prefieras */
+    margin-bottom: 20px;
+}
+
+/* Media queries para ajustar la disposición en pantallas pequeñas */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .project-item {
+        flex-basis: 100%;
+    }
 }
