@@ -1,5 +1,5 @@
-// Fade-in animation on scroll
-const sections = document.querySelectorAll('.fade-in-section');
+// Fade-in animations on scroll
+const sections = document.querySelectorAll('.section');
 
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
