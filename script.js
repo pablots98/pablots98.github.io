@@ -1,17 +1,14 @@
-// Add fade-in effect for sections on scroll
-const sections = document.querySelectorAll('.section, .about-page');
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = 1;
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, { threshold: 0.1 });
-
-sections.forEach(section => {
-    section.style.opacity = 0;
-    section.style.transform = 'translateY(50px)';
-    observer.observe(section);
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://api.github.com/users/pablots98/repos')
+        .then(response => response.json())
+        .then(data => {
+            const reposContainer = document.getElementById('repos');
+            reposContainer.innerHTML = ''; // Limpiar el contenedor
+            data.forEach(repo => {
+                const repoElement = document.createElement('div');
+                repoElement.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a>`;
+                reposContainer.appendChild(repoElement);
+            });
+        })
+        .catch(error => console.error('Error:', error));
 });
