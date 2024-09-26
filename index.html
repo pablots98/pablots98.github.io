@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página de GitHub</title>
+    <title>My gitHub Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,21 +14,38 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About me</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li> <!-- Nuevo enlace para la sección de contacto -->
             </ul>
         </nav>
     </header>
     <main>
         <section id="home">
             <h2>Home</h2>
-            <p>This is my personal GitHub page where I share all my projects and experiments..</p>
+            <p>This is my personal GitHub page where I share all my projects and experiments.</p>
         </section>
         <section id="about">
             <h2>About me</h2>
-            <p>I am a Systems Biology student at Maastricht University currently doing my internship in Modeling Metabolism. Learning about MATLAB, R and Python..</p>
+            <img src="C:/Users/PC/OneDrive/Descargas/Pablo.jpg" alt="This is me" style="width:100%;max-width:300px;"> <!-- Añade tu imagen aquí -->
+            <p>I am a Systems Biology student at Maastricht University currently doing my internship in Modeling Metabolism. Learning about MATLAB, R and Python.</p>
         </section>
         <section id="projects">
             <h2>Projects</h2>
             <div id="repos">Cargando proyectos...</div>
+        </section>
+        <section id="contact"> <!-- Nueva sección de contacto -->
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
     <footer>
