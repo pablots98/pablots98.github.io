@@ -1,61 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Name - Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Mi Página de GitHub</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="container">
-            <h1 class="logo">Your Name</h1>
-            <ul class="nav-links">
-                <li><a href="about.html">About Me</a></li>
+    <header>
+        <h1>Welcome to my GitHub page</h1>
+        <nav>
+            <ul id="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="CV.pdf" download="YourName_CV.pdf">Download CV</a></li>
             </ul>
-        </div>
-    </nav>
-
-    <!-- Main Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-text">
-                <h2>Welcome to My Portfolio</h2>
-                <p>Bioinformatician | Data Scientist | Systems Biologist</p>
-                <a href="about.html" class="btn">Learn More About Me</a>
-            </div>
-            <div class="profile-picture-container">
-                <img src="photo.jpg" alt="Profile Picture" class="profile-picture-small">
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section projects">
-        <div class="container">
-            <h2>Highlighted Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>Summary of a key project you want to highlight.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>Summary of another key project you want to highlight.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is my personal GitHub page where I share all my projects and experiments..</p>
+        </section>
+        <section id="about">
+            <h2>About me</h2>
+            <p>I am a Systems Biology student at Maastricht University currently doing my internship in Modeling Metabolism. Learning about MATLAB, R and Python..</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div id="repos">Cargando proyectos...</div>
+        </section>
+    </main>
     <footer>
-        <p>© 2024 Your Name | All Rights Reserved</p>
+        <p>&copy; 2024 Pablo Tejero. All rights reserved.</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
