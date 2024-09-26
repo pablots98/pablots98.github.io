@@ -4,31 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pablo</title>
+    <title>Pablo Tejero</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="profile-container">
-            <img src="Pablo.jpg" alt="Profile Picture" class="profile-picture">
-        </div>
-        <h1>Pablo</h1>
-        <h2>Systems Biologist and modeling</h2>
-        <a href="Pablo_CV.pdf" class="btn" download="Pablo_CV.pdf">Download CV</a>
-    </header>
 
-    <main>
-        <section class="fade-in-section">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Pablo</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="Pablo_CV.pdf" download="Pablo_CV.pdf">Download CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h2>Hello, I'm <span>Pablo Tejero</span></h2>
+                <p>Bioinformatician | Data Scientist | Systems Biologist</p>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
+            <div class="profile-picture-container">
+                <img src="Pablo.jpg" alt="Profile Picture" class="profile-picture">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
             <h2>About Me</h2>
-            <p>Write a brief introduction about yourself, your work, and your passions here.</p>
-        </section>
-        
-        <section class="fade-in-section">
+            <p>
+                Brief introduction about yourself, your experience, and your research or projects. 
+                Focus on your key skills and passions. You can mention your background in bioinformatics, systems biology, or any other relevant areas.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
             <h2>Projects</h2>
-            <p>Showcase some of your key projects or research areas.</p>
-        </section>
-    </main>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project Title 1</h3>
+                    <p>Description of the project, its goals, and your role in it. Provide key details and highlight any technologies or methods used.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project Title 2</h3>
+                    <p>Description of the project, its goals, and your role in it. Provide key details and highlight any technologies or methods used.</p>
+                </div>
+                <!-- Add more projects here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Interested in collaborating or learning more about my work? Reach out via email or follow me on social media.</p>
+            <div class="social-icons">
+                <a href="https://github.com/pablots98" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/pablo-tejero/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Your Name | All Rights Reserved</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
