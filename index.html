@@ -3,51 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pablo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Pablo's Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#cv">CV</a></li>
-            </ul>
-        </nav>
+        <div class="profile-container">
+            <img src="Pablo.jpg" alt="Profile Picture" class="profile-picture">
+        </div>
+        <h1>Pablo</h1>
+        <h2>Systems Biologist and modeling</h2>
+        <a href="Pablo_CV.pdf" class="btn" download="Pablo_CV.pdf">Download CV</a>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Systems Biology student at Maastricht University, interning in Metabolism Modeling.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Project description.</p>
-        </div>
-        <!-- Add more projects here -->
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:pablotejero1998@gmail.com">pablotejero1998@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com">LinkedIn Profile</a></p>
-        <p>Twitter: <a href="https://www.twitter.com">Twitter Profile</a></p>
-    </section>
-
-    <section id="cv">
-        <h2>My CV</h2>
-        <a href="assets/your-cv.pdf" download>Download my CV</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Pablo's Portfolio</p>
-    </footer>
+    <main>
+        <section class="fade-in-section">
+            <h2>About Me</h2>
+            <p>Write a brief introduction about yourself, your work, and your passions here.</p>
+        </section>
+        
+        <section class="fade-in-section">
+            <h2>Projects</h2>
+            <p>Showcase some of your key projects or research areas.</p>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
