@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f7f1;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ece5d5;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #5e4c3a;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.profile-pic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #ece5d5;
+}
+
+.description {
+    max-width: 600px;
+    padding-left: 30px;
+}
+
+.description h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.description p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Projects Section */
+.projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.project {
+    text-align: center;
+    margin: 20px;
+}
+
+.project img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ece5d5;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #ece5d5;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #5e4c3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4b3a2c;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .description {
+        padding-left: 0;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+}
