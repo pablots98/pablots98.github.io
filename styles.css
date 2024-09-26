@@ -37,39 +37,35 @@ nav ul li a:hover {
 
 /* Main Section */
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 50px;
 }
 
-.intro {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;
-}
-
-.profile-pic img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 3px solid #ece5d5;
-}
-
-.description {
+/* Contact Section */
+.contact-section {
     max-width: 600px;
-    padding-left: 30px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.description h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+.contact-section form input, .contact-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.description p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+.contact-section form button {
+    padding: 10px 20px;
+    background-color: #5e4c3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section form button:hover {
+    background-color: #4b3a2c;
 }
 
 /* Projects Section */
@@ -93,7 +89,7 @@ main {
     margin-bottom: 10px;
 }
 
-/* Footer Section */
+/* Footer */
 footer {
     background-color: #ece5d5;
     padding: 20px;
@@ -113,46 +109,4 @@ footer ul li {
 footer ul li a {
     text-decoration: none;
     color: #333;
-}
-
-form {
-    margin-top: 20px;
-}
-
-form input, form textarea {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: #5e4c3a;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #4b3a2c;
-}
-
-/* Responsive Design */
-@media only screen and (max-width: 768px) {
-    .intro {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .description {
-        padding-left: 0;
-    }
-
-    .projects {
-        flex-direction: column;
-        align-items: center;
-    }
 }
