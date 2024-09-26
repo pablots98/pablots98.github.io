@@ -35,9 +35,60 @@ nav ul li a:hover {
     color: #5e4c3a;
 }
 
-/* Main Section */
-main {
+/* Main Section Layout */
+.intro {
+    display: flex;
+    justify-content: flex-start; /* Asegura que la imagen y el texto estén en línea */
+    align-items: center;         /* Alinea el contenido verticalmente en el centro */
+    max-width: 1200px;
+    margin: 0 auto;              /* Centra el contenido horizontalmente en la página */
+    padding: 50px 20px;
+}
+
+/* Ajuste del tamaño de la imagen de perfil */
+.profile-pic img {
+    width: 150px;                /* Ajusta el ancho de la imagen para que sea más pequeña */
+    height: 150px;               /* Ajusta la altura de la imagen */
+    border-radius: 50%;          /* Mantiene el formato circular de la imagen */
+    border: 3px solid #ece5d5;   /* Borde alrededor de la imagen */
+}
+
+/* Estilos para la descripción al lado de la imagen */
+.description {
+    max-width: 600px;            /* Ajusta el ancho máximo del texto */
+    margin-left: 30px;           /* Separa el texto de la imagen a la izquierda */
+    padding-left: 20px;
+}
+
+.description h1 {
+    font-size: 2rem;             /* Ajusta el tamaño del título */
+    margin-bottom: 15px;
+}
+
+.description p {
+    font-size: 1.1rem;           /* Ajusta el tamaño del párrafo */
+    line-height: 1.6;
+}
+
+/* Projects Section */
+.projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 50px;
+}
+
+.project {
+    text-align: center;
+    margin: 20px;
+}
+
+.project img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ece5d5;
+    margin-bottom: 10px;
 }
 
 /* Contact Section */
@@ -68,27 +119,6 @@ main {
     background-color: #4b3a2c;
 }
 
-/* Projects Section */
-.projects {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 50px;
-}
-
-.project {
-    text-align: center;
-    margin: 20px;
-}
-
-.project img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 2px solid #ece5d5;
-    margin-bottom: 10px;
-}
-
 /* Footer */
 footer {
     background-color: #ece5d5;
@@ -109,4 +139,22 @@ footer ul li {
 footer ul li a {
     text-decoration: none;
     color: #333;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .intro {
+        flex-direction: column;  /* En pantallas pequeñas, la imagen y el texto se apilan */
+        text-align: center;
+    }
+
+    .description {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
 }
