@@ -48,8 +48,8 @@ nav ul li a:hover {
 
 /* Ajuste del tamaño de la imagen de perfil */
 .profile-pic img {
-    width: 150px !important;      /* Fuerza el ancho de la imagen */
-    height: 150px !important;     /* Fuerza la altura de la imagen */
+    width: 250px !important;      /* Fuerza el ancho de la imagen */
+    height: 250px !important;     /* Fuerza la altura de la imagen */
     border-radius: 50%;           /* Mantiene el formato circular de la imagen */
     border: 3px solid #ece5d5;    /* Borde alrededor de la imagen */
     object-fit: cover;            /* Asegura que la imagen se recorte si es necesario para mantener el aspecto circular */
@@ -58,7 +58,7 @@ nav ul li a:hover {
 /* Estilos para la descripción al lado de la imagen */
 .description {
     max-width: 600px;            /* Ajusta el ancho máximo del texto */
-    margin-left: 30px;           /* Separa el texto de la imagen a la izquierda */
+    margin-left: 50px;           /* Separa el texto de la imagen a la izquierda */
     padding-left: 20px;
 }
 
