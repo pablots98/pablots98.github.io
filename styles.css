@@ -60,6 +60,7 @@ nav ul li a:hover {
     max-width: 600px;            /* Ajusta el ancho máximo del texto */
     margin-left: 50px;           /* Separa el texto de la imagen a la izquierda */
     padding-left: 20px;
+    flex: 1;
 }
 
 .description h1 {
