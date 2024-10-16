@@ -50,7 +50,7 @@ nav ul li a:hover {
 .profile-pic img {
     width: 400px !important;      /* Fuerza el ancho de la imagen */
     height: 400px !important;     /* Fuerza la altura de la imagen */
-    border-radius: 50%;           /* Mantiene el formato circular de la imagen */
+    border-radius: 0%;           /* Mantiene el formato circular de la imagen */
     border: 3px solid #dcdcdc;    /* Borde alrededor de la imagen */
     object-fit: cover;            /* Asegura que la imagen se recorte si es necesario para mantener el aspecto circular */
 }
