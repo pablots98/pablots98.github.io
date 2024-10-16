@@ -10,7 +10,7 @@ body {
 
 /* Header and Navigation */
 header {
-    background-color: #ece5d5;
+    background-color: #b3b3b3;
     padding: 20px;
     text-align: center;
 }
@@ -51,7 +51,7 @@ nav ul li a:hover {
     width: 400px !important;      /* Fuerza el ancho de la imagen */
     height: 400px !important;     /* Fuerza la altura de la imagen */
     border-radius: 50%;           /* Mantiene el formato circular de la imagen */
-    border: 3px solid #ece5d5;    /* Borde alrededor de la imagen */
+    border: 3px solid #dcdcdc;    /* Borde alrededor de la imagen */
     object-fit: cover;            /* Asegura que la imagen se recorte si es necesario para mantener el aspecto circular */
 }
 
@@ -90,7 +90,7 @@ nav ul li a:hover {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 2px solid #ece5d5;
+    border: 2px solid #dcdcdc;
     margin-bottom: 10px;
 }
 
@@ -111,7 +111,7 @@ nav ul li a:hover {
 
 .contact-section form button {
     padding: 10px 20px;
-    background-color: #5e4c3a;
+    background-color: #dcdcdc;
     color: white;
     border: none;
     border-radius: 5px;
@@ -119,12 +119,12 @@ nav ul li a:hover {
 }
 
 .contact-section form button:hover {
-    background-color: #4b3a2c;
+    background-color: #dcdcdc;
 }
 
 /* Footer */
 footer {
-    background-color: #ece5d5;
+    background-color: #b3b3b3;
     padding: 20px;
     text-align: center;
 }
